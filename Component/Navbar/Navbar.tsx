@@ -1,12 +1,13 @@
+import Image from "next/image";
 import React from "react";
 
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-dark">
+      <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
           <a className="navbar-brand text-light fw-bold" href="#">
-            Navbar
+            <Image src="/logo.png" width={150} height={50}></Image>
           </a>
           <button
             className="navbar-toggler"
@@ -19,11 +20,14 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <div
+            className="collapse navbar-collapse "
+            id="navbarSupportedContent"
+          >
+            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a
-                  className="nav-link active text-light fw-bold"
+                  className="nav-link active fw-bold"
                   aria-current="page"
                   href="#"
                 >
@@ -31,7 +35,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-light fw-bold" href="#">
+                <a className="nav-link fw-bold" href="#">
                   Link
                 </a>
               </li>
